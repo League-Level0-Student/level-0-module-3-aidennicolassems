@@ -26,16 +26,18 @@ public class RobotColorChooser {
 		String color = JOptionPane.showInputDialog("What color pen do you want Rob to draw with");
 		//5. Use an if/else statement to set the pen color that the user requested
 		if (color.equals( "Red")) {
-			Rob.setPenColor(Red);
+			Rob.setPenColor(Color.red);
 		}
 		if (color.equals( "Blue")) {
-			Rob.setPenColor(Blue);
+			Rob.setPenColor(Color.blue);
 		}
 		if (color.equals( "Green")) {
-			Rob.setPenColor(Green);
+			Rob.setPenColor(Color.green);
 		}
 			//6. If the user doesn’t enter anything, choose a random color
-		else 
+		else { 
+			Rob.setRandomPenColor();
+		}
 		//7. Put a loop around your code so that you keep asking the user for more colors & drawing them
 		
 
